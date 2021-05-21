@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6C0F77372657D496008F8E3C /* DragGestureView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0F77362657D496008F8E3C /* DragGestureView2.swift */; };
+		6C0F773F26584618008F8E3C /* ScrollViewReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0F773E26584618008F8E3C /* ScrollViewReaderView.swift */; };
 		6C1FEA6226569034003ED52E /* SwiftUI_ContinuedLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1FEA6126569034003ED52E /* SwiftUI_ContinuedLearningApp.swift */; };
 		6C1FEA6626569035003ED52E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C1FEA6526569035003ED52E /* Assets.xcassets */; };
 		6C1FEA6926569035003ED52E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C1FEA6826569035003ED52E /* Preview Assets.xcassets */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		6C0F77362657D496008F8E3C /* DragGestureView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureView2.swift; sourceTree = "<group>"; };
+		6C0F773E26584618008F8E3C /* ScrollViewReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewReaderView.swift; sourceTree = "<group>"; };
 		6C1FEA5E26569034003ED52E /* SwiftUI_ContinuedLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_ContinuedLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C1FEA6126569034003ED52E /* SwiftUI_ContinuedLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ContinuedLearningApp.swift; sourceTree = "<group>"; };
 		6C1FEA6526569035003ED52E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				6C4AD9322656FE7F00077724 /* RotationGestureView.swift */,
 				6C4AD937265771D200077724 /* DragGestureView.swift */,
 				6C0F77362657D496008F8E3C /* DragGestureView2.swift */,
+				6C0F773E26584618008F8E3C /* ScrollViewReaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C1FEA932656904B003ED52E /* onLongTapGesture.swift in Sources */,
+				6C0F773F26584618008F8E3C /* ScrollViewReaderView.swift in Sources */,
 				6C4AD92B2656FB6700077724 /* MagnificationGestureView.swift in Sources */,
 				6C4AD9332656FE7F00077724 /* RotationGestureView.swift in Sources */,
 				6C0F77372657D496008F8E3C /* DragGestureView2.swift in Sources */,

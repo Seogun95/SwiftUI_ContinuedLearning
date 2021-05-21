@@ -17,10 +17,12 @@ struct DragGestureView2: View {
             
             
             MySignUpView()
+                
+                
                 .offset(y: startingOffsetY)
                 .offset(y: currentDrageOffsetY)
                 .offset(y: endingDrageOffsetY)
-                .gesture(
+                .gesture (
                     DragGesture()
                         .onChanged { value in
                             currentDrageOffsetY = value.translation.height
