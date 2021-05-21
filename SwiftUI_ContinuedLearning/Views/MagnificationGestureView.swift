@@ -37,7 +37,8 @@ struct MagnificationGestureView: View {
                         currentAmount = 0
                     }
                 }
-            )
+             )
+            .zIndex(2.0)
 
 
             HStack {

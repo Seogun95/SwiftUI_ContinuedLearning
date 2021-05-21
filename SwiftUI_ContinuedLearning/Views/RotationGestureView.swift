@@ -13,9 +13,9 @@ struct RotationGestureView: View {
         Image("sample1")
             .resizable()
             .renderingMode(.original)
-            .frame(width: 250, height: 200)
-            
-            .clipShape(RoundedRectangle(cornerRadius: 10))
+            .scaledToFit()
+            .frame(width: 250)
+            .cornerRadius(20)
             .shadow(radius: 10)
             .rotationEffect(angle)
             .gesture(

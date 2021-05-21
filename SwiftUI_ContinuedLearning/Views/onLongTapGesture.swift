@@ -15,27 +15,25 @@ struct LongPressGesture: View {
         VStack {
             Rectangle()
                 .fill(isSuccess ? Color.green : Color.blue)
-                .frame(width: isCompleted ? .infinity : 0)
                 .frame(height: 55)
+                .frame(width: isCompleted ? .infinity : 0)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .background(Color.gray)
             
-            HStack {
+            HStack(spacing: 20) {
                 Text("2초간 유지")
-                    .padding()
                     .foregroundColor(.white)
-                    .background(Color.black)
-                    .cornerRadius(10)
-                    .onLongPressGesture(minimumDuration: 2.0,
-                                        maximumDistance: 50) { (isPressed) in
+                    .padding()
+                    .background(Color.black.cornerRadius(10))
+                    .onLongPressGesture(minimumDuration: 1.5, maximumDistance: 50) { (isPressed) in
                         if isPressed {
-                            withAnimation(.easeIn(duration: 2.0)) {
+                            withAnimation(.easeInOut(duration: 1.5)) {
                                 isCompleted = true
                             }
                         } else {
                             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                                 if !isSuccess {
-                                    withAnimation(.easeOut) {
+                                    withAnimation(.spring()) {
                                         isCompleted = false
                                     }
                                 }
@@ -43,17 +41,16 @@ struct LongPressGesture: View {
                         }
                         
                     } perform: {
-                        
-                        withAnimation(.easeOut) {
+                        withAnimation(.spring()) {
                             isSuccess = true
                         }
-                        
                     }
+                
+                
                 Text("리셋")
-                    .padding()
                     .foregroundColor(.white)
-                    .background(Color.black)
-                    .cornerRadius(10)
+                    .padding()
+                    .background(Color.black.cornerRadius(10))
                     .onTapGesture {
                         withAnimation(.spring()) {
                             isCompleted = false
@@ -61,6 +58,7 @@ struct LongPressGesture: View {
                         }
                     }
             }
+            .padding()
         }
         
         // ontapGesture  튜토리얼
