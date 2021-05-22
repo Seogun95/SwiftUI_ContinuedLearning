@@ -49,7 +49,7 @@ struct DragGestureView2: View {
                 )
             
             
-//            Text("\(currentDrageOffsetY)")
+            Text("\(endingDrageOffsetY)")
         }
         .ignoresSafeArea(edges: .bottom)
     }
