@@ -22,6 +22,7 @@
 		6C4AD9332656FE7F00077724 /* RotationGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9322656FE7F00077724 /* RotationGestureView.swift */; };
 		6C4AD938265771D200077724 /* DragGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD937265771D200077724 /* DragGestureView.swift */; };
 		6C8FA8B3265A64B400675A9D /* MultipleSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8FA8B2265A64B400675A9D /* MultipleSheetView.swift */; };
+		6C8FA8C7265B6E8300675A9D /* MaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8FA8C6265B6E8300675A9D /* MaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		6C4AD9322656FE7F00077724 /* RotationGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationGestureView.swift; sourceTree = "<group>"; };
 		6C4AD937265771D200077724 /* DragGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureView.swift; sourceTree = "<group>"; };
 		6C8FA8B2265A64B400675A9D /* MultipleSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSheetView.swift; sourceTree = "<group>"; };
+		6C8FA8C6265B6E8300675A9D /* MaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				6C0F776126597E7A008F8E3C /* GeometryReaderView2.swift */,
 				6C0F77592658F9DF008F8E3C /* ScrollView_ForEach.swift */,
 				6C8FA8B2265A64B400675A9D /* MultipleSheetView.swift */,
+				6C8FA8C6265B6E8300675A9D /* MaskView.swift */,
 				6C0F773E26584618008F8E3C /* ScrollViewReaderView.swift */,
 			);
 			path = Views;
@@ -299,6 +302,7 @@
 				6C0F773F26584618008F8E3C /* ScrollViewReaderView.swift in Sources */,
 				6C0F776226597E7A008F8E3C /* GeometryReaderView2.swift in Sources */,
 				6C4AD92B2656FB6700077724 /* MagnificationGestureView.swift in Sources */,
+				6C8FA8C7265B6E8300675A9D /* MaskView.swift in Sources */,
 				6C4AD9332656FE7F00077724 /* RotationGestureView.swift in Sources */,
 				6C0F77372657D496008F8E3C /* DragGestureView2.swift in Sources */,
 				6C0F77552658D2B7008F8E3C /* GeometryReaderView.swift in Sources */,

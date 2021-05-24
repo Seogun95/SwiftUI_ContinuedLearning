@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUI_ContinuedLearningApp: App {
     var body: some Scene {
         WindowGroup {
-            MagnificationGestureView()
+            MaskView()
         }
     }
 }
