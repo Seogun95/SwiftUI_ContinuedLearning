@@ -14,6 +14,8 @@ import AVKit
 class SoundSetting {
     //1. soundSetting의 단일 인스턴스를 만듬
     static let instance = SoundSetting()
+    /// singleton ? :
+    /*싱글 톤은 한 번만 생성 된 다음 사용해야하는 모든 곳에서 공유해야하는 객체입니다 */
     
     //3. 음악을 재생하기위한 변수를 생성 (옵셔널 타입)
     var player: AVAudioPlayer?
@@ -73,7 +75,7 @@ struct SoundsView: View {
     }
 }
 
-//MARK: IMAGEVIES
+//MARK: IMAGE VIEWS
 struct imageViews: View {
     var imageName: String
     var iconColor: Color
