@@ -9,19 +9,15 @@ import SwiftUI
 
 struct MaskView: View {
     
-    @State var rating: Int  = UserDefaults.standard.integer(forKey: "save_rating")
+    @State var rating: Int = UserDefaults.standard.integer(forKey: "ranting_key")
     
     var body: some View {
         ZStack {
-            starsView
-                .overlay(
-                    overlayView
-                        .mask(starsView)
-                    
-                )
+            starViews
+                .overlay(overlayView).mask(starViews)
         }
-        
     }
+    
     
     private var overlayView: some View {
         GeometryReader { geo in
@@ -31,15 +27,17 @@ struct MaskView: View {
         }
         .allowsHitTesting(false)
     }
-    private var starsView: some View {
+    private var starViews: some View {
         HStack {
-            ForEach(1..<6) { value in
+            ForEach(1..<6) { index in
                 Image(systemName: "star.fill")
                     .font(.title)
                     .foregroundColor(.gray)
                     .onTapGesture {
-                        rating = value
-                        UserDefaults.standard.set(rating, forKey: "save_rating")
+                        withAnimation(.easeIn(duration: 0.3)) {
+                            rating = index
+                            UserDefaults.standard.set(rating, forKey: "ranting_key")
+                        }
                     }
             }
         }
