@@ -8,10 +8,7 @@
 import SwiftUI
 
 struct MaskView: View {
-    @ObservedObject var soundsetting = SoundSetting()
-    @ObservedObject var hapticsetting = HapticsManager()
 
-    
     @State var rating: Int = UserDefaults.standard.integer(forKey: "ranting_key")
     
     var body: some View {
@@ -39,8 +36,8 @@ struct MaskView: View {
                     .onTapGesture {
                         withAnimation(.easeIn(duration: 0.3)) {
                             rating = index
-                            self.soundsetting.palysound(sound: .click)
-                            self.hapticsetting
+                            SoundSetting.instance.palysound(sound: .click)
+                            HapticsManager.instance.impact(style: .heavy)
                             UserDefaults.standard.set(rating, forKey: "ranting_key")
                         }
                     }

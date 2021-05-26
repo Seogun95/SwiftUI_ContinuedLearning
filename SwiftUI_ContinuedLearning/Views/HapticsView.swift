@@ -13,7 +13,7 @@ import SwiftUI
  */
 
 //MARK: HAPCICES CLASS
-class HapticsManager: ObservableObject {
+class HapticsManager {
     //1. HapticsManger의 단일 인스턴스를 만듬
     static let instance = HapticsManager()
     /// singleton ? :
@@ -56,7 +56,6 @@ struct HapticsView: View {
                 Button("medium") { HapticsManager.instance.impact(style: .medium)}
                 Button("light") { HapticsManager.instance.impact(style: .light)}
                 Button("heavy") { HapticsManager.instance.impact(style: .heavy)}
-                Button("soft1") {
                 
             }
         }
