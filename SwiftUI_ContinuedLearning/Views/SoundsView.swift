@@ -11,7 +11,7 @@ import AVKit
 
 
 //MARK: SOUNDSETTING
-class SoundSetting {
+class SoundSetting: ObservableObject {
     //1. soundSetting의 단일 인스턴스를 만듬
     static let instance = SoundSetting()
     /// singleton ? :

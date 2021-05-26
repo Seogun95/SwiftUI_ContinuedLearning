@@ -13,7 +13,7 @@ import SwiftUI
  */
 
 //MARK: HAPCICES CLASS
-class HapticsManager {
+class HapticsManager: ObservableObject {
     //1. HapticsManger의 단일 인스턴스를 만듬
     static let instance = HapticsManager()
     /// singleton ? :
@@ -34,6 +34,8 @@ class HapticsManager {
 
 //MARK: BODY
 struct HapticsView: View {
+    let generator = UINotificationFeedbackGenerator ()
+    
     var body: some View {
         VStack(spacing: 20) {
             
@@ -42,6 +44,7 @@ struct HapticsView: View {
             Button("success") { HapticsManager.instance.notification(type: .success)}
             Button("error") { HapticsManager.instance.notification(type: .error)}
             Button("warning") { HapticsManager.instance.notification(type: .warning)}
+            Button("success example2") {generator.notificationOccurred(.success)}
             
             //Divider을 사용할 수 도 있지만, Shape struct를 따로 만들어 아래와 같은 구분선을 만들 수 있습니다.
             Line().stroke(style: StrokeStyle(lineWidth: 1, dash: [5])).frame(height: 1)
@@ -53,6 +56,7 @@ struct HapticsView: View {
                 Button("medium") { HapticsManager.instance.impact(style: .medium)}
                 Button("light") { HapticsManager.instance.impact(style: .light)}
                 Button("heavy") { HapticsManager.instance.impact(style: .heavy)}
+                Button("soft1") {
                 
             }
         }
