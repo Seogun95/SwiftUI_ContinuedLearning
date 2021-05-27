@@ -172,11 +172,11 @@
 				6C0F776126597E7A008F8E3C /* GeometryReaderView2.swift */,
 				6C0F77592658F9DF008F8E3C /* ScrollView_ForEach.swift */,
 				6C8FA8B2265A64B400675A9D /* MultipleSheetView.swift */,
+				6C0F773E26584618008F8E3C /* ScrollViewReaderView.swift */,
 				6C8FA8C6265B6E8300675A9D /* MaskView.swift */,
 				6C9FBA14265D255E001C85BC /* SoundsView.swift */,
-				6C75C3E0265E231800FC1241 /* LocalNotificationView.swift */,
 				6C9FBA31265D53C0001C85BC /* HapticsView.swift */,
-				6C0F773E26584618008F8E3C /* ScrollViewReaderView.swift */,
+				6C75C3E0265E231800FC1241 /* LocalNotificationView.swift */,
 				6C9FBA19265D2E0F001C85BC /* Sounds */,
 			);
 			path = Views;
